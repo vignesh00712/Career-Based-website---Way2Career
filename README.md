@@ -29,7 +29,7 @@ Navigate through the website, interact with the chatbot, and follow the prompts 
 The front page of WAY 2 CAREER serves as the gateway to our comprehensive career guidance platform. It is designed to be user-friendly and intuitive, offering easy navigation and access to all the essential features.
 Features of the Front Page
 
-        ![Screenshot 2024-07-10 210858](https://github.com/vignesh00712/Way2Career---Catch-2024-/assets/139787967/ad9c9306-65c7-4de6-845f-d9460a03c184)
+![Screenshot 2024-07-10 210858](https://github.com/vignesh00712/Way2Career---Catch-2024-/assets/139787967/ad9c9306-65c7-4de6-845f-d9460a03c184)
 
     Welcome Banner:
         A visually appealing banner that welcomes users to WAY 2 CAREER.
@@ -59,7 +59,7 @@ Features of the Front Page
 The AI-powered career counseling chatbot is a central feature of the WAY 2 CAREER platform. It provides personalized career advice and guidance to users through an interactive and engaging conversation interface. Below is a detailed description of the chatbot for your README file.
 Chatbot Features
 
-     ![Screenshot_2024-07-10-21-11-09-516_org videolan vlc-edit](https://github.com/vignesh00712/Way2Career---Catch-2024-/assets/139787967/a5cbcab1-c140-4e03-a3ba-db9c28f76e5d)
+ ![Screenshot_2024-07-10-21-11-09-516_org videolan vlc-edit](https://github.com/vignesh00712/Way2Career---Catch-2024-/assets/139787967/a5cbcab1-c140-4e03-a3ba-db9c28f76e5d)
      ![Screenshot_2024-07-10-21-12-12-080_org videolan vlc](https://github.com/vignesh00712/Way2Career---Catch-2024-/assets/139787967/165c9734-b708-49f3-9e1f-6d7c595ea694)
      ![Screenshot_2024-07-10-21-12-04-085_org videolan vlc](https://github.com/vignesh00712/Way2Career---Catch-2024-/assets/139787967/9cc6e9f4-3023-41a0-8076-aa8ed7bd7fb5)
     ![Screenshot_2024-07-10-21-11-51-437_org videolan vlc](https://github.com/vignesh00712/Way2Career---Catch-2024-/assets/139787967/2e4386f3-4c7e-46ad-ac7e-a901e84d8cef)
