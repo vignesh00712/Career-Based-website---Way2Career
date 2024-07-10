@@ -28,10 +28,10 @@ Navigate through the website, interact with the chatbot, and follow the prompts 
 We welcome contributions to WAY 2 CAREER! Please check the contributing guidelines for more details. Submit pull requests or report issues to help us improve the platform.
 License
 
-The project is licensed under [License Name]. See the LICENSE file for more details.
+The project is licensed under . See the LICENSE file for more details.
 ## Contact Information
 
-For questions or feedback, please contact [Your Contact Information].
+For questions or feedback, please contact Linkedin - linkedin.com/in/vignesh-kumar-m-36050a26b.
 ## About
 
 This project aims to provide career guidance and opportunities similar to platforms like LinkedIn and Internshala.You can use this for also like a career adviser
