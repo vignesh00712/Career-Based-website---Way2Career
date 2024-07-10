@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/a13b999530.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/static/css/nev_bar_style.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://i.pinimg.com/736x/83/1c/66/831c66282f6df164dedda50ae58ae614.jpg" />
+    <title>Internships</title>
+    <style>/* Reset default margin and padding */
+      * {
+          margin: 0;
+          padding: 0;
+      }
+      
+      /* Apply styles to the header and logo */
+      header {
+          background-color: #ffffff; /* Optional: Change header background color */
+          padding: 10px; /* Optional: Add padding for better appearance */
+      }
+      
+      .logo {
+          width: 300px; /* Adjust the width of the logo */
+          height: auto; /* Maintain aspect ratio */
+      }
+      .footer {
+    background-color: #031f3b; /* Background color for the footer */
+    padding: 20px; /* Add padding for better appearance */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly horizontally */
+    align-items: center; /* Vertically align items */
+}
+
+.footer-column {
+    flex: 1; /* Equal width for each footer column */
+    margin-right: 20px; /* Add margin between footer columns */
+}
+
+.footer-list {
+    color: #333; /* Text color for footer items */
+}
+
+.footer-list h3 {
+    font-size: 18px; /* Footer list title font size */
+    margin-bottom: 10px; /* Add spacing below the title */
+}
+
+.footer-list-item {
+    margin-bottom: 5px; /* Add spacing between footer items */
+}
+
+.footer-list-item a {
+    color: #666; /* Link color for footer items */
+    text-decoration: none; /* Remove default underline */
+}
+
+.footer-list-item a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+#copyright {
+    font-size: 14px; /* Font size for copyright text */
+}
+
+      </style>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header>
+      <a class="logo" href="index.ejs">
+        <img
+          class="logo"
+          src="https://i.pinimg.com/736x/83/1c/66/831c66282f6df164dedda50ae58ae614.jpg"
+          alt="way 2 career"
+        />
+      </a>
+      <nav>
+        <ul class="nav_links">
+          <li>
+            <a href="internships.ejs">Internships</a>
+          </li>
+        
+            <a href="#">Freshers Job</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="students_log.ejs" id="cta">
+        <button class="headingbutton">Login</button></a
+      >
+      <a href="students_reg.ejs" id="cta1">
+        <button class="headingbutton" id="register">Register</button></a
+      >
+    </header>
+
+    <!-- End of Header -->
+
+    <!-- Body Content for Internships page  -->
+
+    <div id="internship_heading">
+      <h4 style="text-align: left">Total Internships</h4>
+    </div>
+
+    <div id="max-width-container">
+      <div id="reference">
+        <div id="search_criteria_container">
+          <div id="filters">
+            <div id="form_container">
+              <div id="filter_logo">
+                <i class="fas fa-filter"></i>
+                <span>Filters</span>
+              </div>
+
+              <form id="search_form">
+                <!-- Category Selector -->
+                <div class="category_container">
+                  <label for="select_category">Category</label>
+                  <div id="category_options">
+                    <select
+                      id="select_category"
+                      name="select_category"
+                      data-placeholder="e.g Marketing"
+                      class="form_control"
+                    >
+                      <% domains.forEach((el)=>{ %>
+                      <option value="<%= el.domain.substring(0,20) %>">
+                        <%= el.domain.substr(0,20) %>
+                      </option>
+                      <% }) %>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- City selector -->
+
+                <div class="category_container">
+                  <label for="select_city">City</label>
+                  <div id="city_options">
+                    <select
+                      id="select_city"
+                      name="select_city"
+                      data-placeholder="e.g Mumbai"
+                      class="form_control"
+                    >
+                      <% locations.forEach((el)=>{ %>
+                      <option value="<%= el.city %>"><%= el.city %></option>
+                      <% }) %>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Check box - 1 -->
+
+                <div class="filters_checkboxes">
+                  <div class="flex_row">
+                    <label for="work_from_home">Work from home</label>
+                    <div class="switch_container">
+                      <!-- Rounded switch -->
+                      <label class="switch">
+                        <input type="checkbox" id="wfh_check" />
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+
+                    <!-- Checkbox - 2 -->
+                  </div>
+                  <div class="flex_row">
+                    <label for="part_time">Part time</label>
+                    <div class="switch_container">
+                      <!-- Rounded switch -->
+                      <label class="switch">
+                        <input type="checkbox" id="pt_check" />
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- For right side internships -->
+        <div id="list_container">
+          <div id="for_dom"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="emptydiv"></div> -->
+
+    <!-- ----------------- Footer Starts from here ------------------------- -->
+
+                <!-- footer coloumn -4 -->
+                <div class="footer_coloumn">
+                  <div class="footer_list">
+                    <h3>About way 2 career</h3>
+                    <div class="footer_list_item">
+                      <a href="#">About Us</a>
+                    </div>
+                    <div class="footer_list_item">
+                      <a href="#">We're hiring</a>
+                    </div>
+                    <div class="footer_list_item">
+                      <a href="#">Hire Interns for your company</a>
+                    </div>
+                    <div class="footer_list_item">
+                      <a href="#">Team Diary</a>
+                    </div>
+                    <div class="footer_list_item">
+                      <a href="#">Blog</a>
+                    </div>
+                    <div class="footer_list_item">
+                      <a href="#">Our Services</a>
+                    </div>
+                    <div class="footer_list_item">
+                      <a href="#">Terms and Conditions</a>
+                    </div>
+                    <div class="footer_list_item">
+                      <a href="#">Privacy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+             
+      
+                <div id="copyright">
+                  <span>© Copyright 2024 way 2 career</span>
+                </div>
+              </div>
+            </div>
+          </div>
+<script src="/static/js/body.js"></script>

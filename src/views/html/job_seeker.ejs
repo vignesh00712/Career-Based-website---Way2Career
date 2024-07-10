@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill-Based Job Finder</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .job-listing {
+            background-color: #e9ecef;
+            border-left: 5px solid #007bff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .job-listing h3 {
+            margin-top: 0;
+        }
+        .company-info {
+            font-style: italic;
+        }
+        .skill-tag {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Skill-Based Job Finder</h1>
+    </header>
+
+    <main>
+        <div class="form-group">
+            <label for="skillFilter">Select Your Skills:</label>
+            <select id="skillFilter" name="skillFilter" multiple>
+                <option value="Programming">Programming</option>
+                <option value="Design">Design</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Sales">Sales</option>
+                <!-- Add more skills as needed -->
+            </select>
+        </div>
+
+        <button onclick="filterJobs()">Find Jobs</button>
+
+        <div id="jobListings" class="job-listings"></div>
+    </main>
+
+    <footer>
+        <p>&copy; Skill-Based Job Finder</p>
+    </footer>
+
+    <script src="/static/js/skill_based_job_finder.js"></script>
+</body>
+</html>

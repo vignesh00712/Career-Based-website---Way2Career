@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/a13b999530.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/static/css/nev_bar_style.css" />
+    <link rel="stylesheet" href="/static/css/mainvishal.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://i.pinimg.com/736x/83/1c/66/831c66282f6df164dedda50ae58ae614.jpg" />
+    <title>Home</title>
+    <style>
+      body {
+          font-family: 'Open Sans', sans-serif;
+          background-color: #f4f4f9;
+          margin: 0;
+          padding: 0;
+      }
+
+      header, .footer_coloumn h3, .footer_bottom, .job-listing {
+           /* Changing the background color to violet */
+      }
+
+      .container {
+          max-width: 1200px;
+          margin: 20px auto;
+          padding: 20px;
+      }
+
+      .button-container {
+          text-align: center;
+          margin-bottom: 30px;
+      }
+
+      .category-button {
+          background-color: #6a1b9a; /* Violet background for buttons */
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          margin: 10px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+      }
+
+      .category-button:hover {
+          background-color: #7c43bd; /* Slightly lighter violet on hover */
+      }
+      .float-logo {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        width: 60px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    .centered-image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Optional: Set container height for vertical centering */
+  }
+  .centered-image {
+      max-width: 100%;
+      max-height: 100%;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the header and logo */
+header {
+    background-color: #ffffff; /* Optional: Change header background color */
+    padding: 10px; /* Optional: Add padding for better appearance */
+}
+
+.logo {
+    width: 300px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+.footer {
+background-color: #031f3b; /* Background color for the footer */
+padding: 20px; /* Add padding for better appearance */
+display: flex; /* Use flexbox for layout */
+justify-content: space-between; /* Space items evenly horizontally */
+align-items: center; /* Vertically align items */
+}
+
+.footer-column {
+flex: 1; /* Equal width for each footer column */
+margin-right: 20px; /* Add margin between footer columns */
+}
+
+.footer-list {
+color: #333; /* Text color for footer items */
+}
+
+.footer-list h3 {
+font-size: 18px; /* Footer list title font size */
+margin-bottom: 10px; /* Add spacing below the title */
+}
+
+.footer-list-item {
+margin-bottom: 5px; /* Add spacing between footer items */
+}
+
+.footer-list-item a {
+color: #666; /* Link color for footer items */
+text-decoration: none; /* Remove default underline */
+}
+
+.footer-list-item a:hover {
+text-decoration: underline; /* Add underline on hover */
+}
+
+#copyright {
+font-size: 14px; /* Font size for copyright text */
+}
+
+  </style>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.ejs">
+        <img
+          class="logo"
+          src="https://i.pinimg.com/736x/83/1c/66/831c66282f6df164dedda50ae58ae614.jpg"
+          alt="way 2 career"
+        />
+      </a>
+        
+      </a>
+      <nav>
+        <ul class="nav_links">
+          <li>
+            <a href="internships.ejs">Internships</a>
+          </li>
+      
+          <li>
+            <a href="#">Freshers Job</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="students_log.ejs" id="cta">
+        <button class="headingbutton">Login</button></a
+      >
+
+      <a href="students_reg.ejs" id="cta1">
+        <button class="headingbutton" id="register">Register</button></a
+      >
+    </header>
+
+    <div id="searchbox">
+      <input
+        id="home_search"
+        type="text"
+        placeholder="What are you looking for?"
+      />
+      <button id="searchIcon">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+    <div id="slider">
+      <div class="slide">
+        <button id="button1"><</button>
+      </div>
+      <div id="button2" class="slide">
+        <button id="btn2">></button>
+      </div>
+    </div>
+
+    <div id="dot"></div>
+    <script src="/static/js/nev_bar.js"></script>
+
+ ]
+
+    <div id="internships" class="container-fluid section">
+      <div class="max-width-container">
+        <h2>Internships</h2>
+        <p class="section_description">
+          Apply to 10,000+ internships for free
+          <a class="view_all_cta" href="internships.ejs">
+            View all internships <i class="ic-24-arrow-right"></i>
+          </a>
+        </p>
+        <!-- First Main Div    -->
+       
+      <main>
+        <div class="container">
+            <div class="button-container">
+                <button class="category-button" onclick="window.location.href = 'specific_skill_finder_page.ejs';">
+                    Specific Skill Finder
+                </button>
+                <button class="category-button" onclick="window.location.href = 'job_seeker.ejs';">
+                    Job Seeker with Specific Skills
+                </button>
+                <button class="category-button" onclick="window.location.href = 'after_schooling.ejs';">
+                    After Schooling
+                </button>
+                <button class="category-button" onclick="window.location.href = 'hr_recruiter.ejs';">
+                    HR Recruiter
+                </button>
+                <button class="category-button" onclick="window.location.href = 'recent_graduate.ejs';">
+                    Recent Graduate
+                </button>
+                <button class="category-button" onclick="window.location.href = 'on_job.ejs';">
+                    On-the-Job Training (specified)
+                </button>
+            </div>
+<!-- Add this to your main web application's HTML file -->
+
+<h1>WAY 2 CAREER CHATBOT</h1>
+<div class="centered-image-container">
+  <a href="http://localhost:8501/#way-2-career-bot">
+      <img class="centered-image" src="https://i.pinimg.com/736x/a6/0d/85/a60d85af39f7b36898f8331016beff11.jpg" alt="Description of the image">
+  </a>
+</div>
+
+            <!-- The rest of the main content as before -->
+        </div>
+    </main>
+                <!-- footer coloumn -4 -->
+                <div class="footer_coloumn">
+                  <div class="footer_list">
+                    <h3>About way 2 career</h3>
+                    <div class="footer_list_item">
+                      <a href="#">About Us</a>
+                    </div>
+                    <div class="footer_list_item">
+                      <a href="#">We're hiring</a>
+                    </div>
+                    <div class="footer_list_item">
+                      <a href="#">Hire Interns for your company</a>
+                    </div>
+                    <div class="footer_list_item">
+                      <a href="#">Team Diary</a>
+                    </div>
+                    <div class="footer_list_item">
+                      <a href="#">Blog</a>
+                    </div>
+                    <div class="footer_list_item">
+                      <a href="#">Our Services</a>
+                    </div>
+                    <div class="footer_list_item">
+                      <a href="#">Terms and Conditions</a>
+                    </div>
+                    <div class="footer_list_item">
+                      <a href="#">Privacy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+             
+      
+                <div id="copyright">
+                  <span>© Copyright 2024 way 2 career</span>
+                </div>
+              </div>
+            </div>
+          </div>

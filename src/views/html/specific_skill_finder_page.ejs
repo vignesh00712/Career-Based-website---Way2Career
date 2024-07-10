@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Filter</title>
+</head>
+
+<body>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+    
+        .container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+    
+        h1 {
+          position: center;
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+    
+        p {
+          margin-bottom: 20px;
+        }
+    
+        form {
+          margin-bottom: 20px;
+        }
+    
+        label {
+          display: block;
+          margin-bottom: 5px;
+        }
+    
+        input[type="text"],
+        input[type="number"],
+        textarea {
+          position: center;
+          width: 750px;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          margin-bottom: 10px;
+        }
+    
+        button[type="submit"] {
+          width: 100px;
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+    
+        button[type="submit"]:hover {
+          background-color: #0056b3;
+        }
+    
+        hr {
+          border: none;
+          border-top: 1px solid #ccc;
+          margin: 20px 0;
+        }
+    
+        #filteredProfiles {
+          margin-top: 20px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+    
+        .profile {
+          width: 300px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          padding: 10px;
+          margin: 10px;
+          text-align: center;
+        }
+    
+        .profile img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          margin-bottom: 10px;
+        }
+    
+        .profile h3 {
+          margin-top: 0;
+        }
+    
+        .profile p {
+          margin-bottom: 5px;
+        }
+    
+        body {
+          background-color: #f0f7ff;
+          /* Light blue background */
+          color: #333;
+          /* Dark text color */
+          font-family: Arial, sans-serif;
+          /* Default font */
+        }
+    
+        h1{
+          background-color: #007bff;
+          /* Blue header background */
+          color: #fff;
+          /* White text color */
+          padding: 20px;
+          /* Add padding */
+          text-align: center;
+          /* Center align text */
+        }
+    
+        main {
+          margin: 20px;
+          /* Add margin */
+        }
+    
+        form {
+          background-color: #fff;
+          /* White form background */
+          padding: 20px;
+          /* Add padding */
+          border-radius: 5px;
+          /* Rounded corners */
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          /* Add shadow */
+        }
+    
+        label {
+          display: block;
+          /* Display labels as block elements */
+          margin-bottom: 5px;
+          /* Add space below labels */
+        }
+    
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          width: 100%;
+          /* Full width */
+          padding: 10px;
+          /* Add padding */
+          margin-bottom: 10px;
+          /* Add space below inputs */
+          border: 1px solid #ccc;
+          /* Add border */
+          border-radius: 3px;
+          /* Rounded corners */
+          box-sizing: border-box;
+          /* Ensure padding and border are included in width */
+        }
+    
+        .error {
+          color: red;
+          /* Red error text color */
+          font-size: 0.8rem;
+          /* Smaller font size */
+          margin-top: 5px;
+          /* Add space above error messages */
+        }
+    
+        button[type="submit"] {
+          background-color: #007bff;
+          /* Blue button background */
+          color: #fff;
+          /* White button text color */
+          padding: 10px 20px;
+          /* Add padding */
+          border: none;
+          /* Remove border */
+          border-radius: 3px;
+          /* Rounded corners */
+          cursor: pointer;
+          /* Change cursor to pointer on hover */
+        }
+    
+        button[type="submit"]:hover {
+          background-color: #0056b3;
+          /* Darker blue on hover */
+        }
+    
+        footer {
+          margin-top: 20px;
+          /* Add space above footer */
+          text-align: center;
+          /* Center align text */
+        }
+      </style>
+  <h1 style="text-align: center;">College Filter</h1>
+  <p>Enter the filtering criteria below to filter colleges based on marks and fees.</p>
+  <form id="filterForm">
+    <label for="marks">Minimum Marks:</label>
+    <input type="number" id="marks" name="marks" min="0"><br><br>
+
+    <label for="fees">Maximum Fees:</label>
+    <input type="number" id="fees" name="fees" min="0"><br><br>
+
+    <button type="submit">Filter Colleges</button>
+  </form>
+
+  <hr>
+
+  <h2>Filtered Colleges</h2>
+  <div id="filteredColleges">
+    <!-- Filtered colleges will be displayed here -->
+  </div>
+
+  <script>
+    document.getElementById("filterForm").addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Gather filter criteria
+      const marks = parseInt(document.getElementById("marks").value.trim(), 10);
+      const fees = parseInt(document.getElementById("fees").value.trim(), 10);
+
+      // Hardcoded college data
+      const colleges = [
+        { name: "College A", marks: 80, fees: 5000 },
+        { name: "College B", marks: 75, fees: 6000 },
+        { name: "College C", marks: 85, fees: 5500 },
+        { name: "College D", marks: 90, fees: 6500 },
+        { name: "College E", marks: 70, fees: 4500 }
+        // Add more colleges as needed
+      ];
+
+      // Filter colleges based on the provided criteria
+      const filteredColleges = colleges.filter(function (college) {
+        const marksMatch = marks ? college.marks >= marks : true;
+        const feesMatch = fees ? college.fees <= fees : true;
+        return marksMatch && feesMatch;
+      });
+
+      displayFilteredColleges(filteredColleges);
+    });
+
+    // Function to display filtered colleges
+    function displayFilteredColleges(colleges) {
+      const filteredCollegesContainer = document.getElementById("filteredColleges");
+      filteredCollegesContainer.innerHTML = ""; // Clear previous results
+
+      if (colleges.length === 0) {
+        filteredCollegesContainer.textContent = "No colleges match the criteria.";
+      } else {
+        colleges.forEach(function (college) {
+          const collegeElement = document.createElement("div");
+          collegeElement.innerHTML = `<strong>Name:</strong> ${college.name}<br>
+                                                <strong>Marks:</strong> ${college.marks}<br>
+                                                <strong>Fees:</strong> $${college.fees}<br><br>`;
+          filteredCollegesContainer.appendChild(collegeElement);
+        });
+      }
+    }
+  </script>
+</body>
+
+</html>
+<script src="/static/js/specific_skill_finder_page.js"></script>

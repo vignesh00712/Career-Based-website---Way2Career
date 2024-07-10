@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduate Job Finder</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e8eff1;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0056b3;
+            color: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .job-listing {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Graduate Job Finder</h1>
+    </header>
+
+    <main>
+        <form id="jobFinderForm">
+            <div class="form-group">
+                <label for="fieldInterest">Field of Interest:</label>
+                <select id="fieldInterest" name="fieldInterest">
+                    <option value="Technology">Technology</option>
+                    <option value="Business">Business</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <!-- Add more fields as needed -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="courseSelection">Course Selection:</label>
+                <select id="courseSelection" name="courseSelection">
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Nursing">Nursing</option>
+                    <!-- Add more courses as needed -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="salaryRange">Desired Salary Range:</label>
+                <input type="range" id="salaryRange" name="salaryRange" min="30000" max="120000" step="1000">
+                <span id="salaryRangeValue">$30,000</span>
+            </div>
+
+            <button type="button" onclick="filterJobs()">Find Jobs</button>
+        </form>
+
+        <div id="jobListings" class="job-listing"></div>
+    </main>
+
+    <footer>
+        <p>&copy; Graduate Job Finder</p>
+    </footer>
+
+    <script src="/static/js/graduate_job_finder.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/a13b999530.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/static/css/nev_bar_style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+  
+        header, .footer_coloumn h3, .footer_bottom, .job-listing {
+             /* Changing the background color to violet */
+        }
+  
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+  
+        .button-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+  
+        .category-button {
+            background-color: #6a1b9a; /* Violet background for buttons */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+  
+        .category-button:hover {
+            background-color: #7c43bd; /* Slightly lighter violet on hover */
+        }
+        .float-logo {
+          position: fixed;
+          right: 20px;
+          bottom: 20px;
+          width: 60px;
+          cursor: pointer;
+          z-index: 1000;
+      }
+      .centered-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Optional: Set container height for vertical centering */
+    }
+    .centered-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+  }
+  
+  /* Apply styles to the header and logo */
+  header {
+      background-color: #ffffff; /* Optional: Change header background color */
+      padding: 10px; /* Optional: Add padding for better appearance */
+  }
+  
+  .logo {
+      width: 300px; /* Adjust the width of the logo */
+      height: auto; /* Maintain aspect ratio */
+  }
+  .footer {
+  background-color: #031f3b; /* Background color for the footer */
+  padding: 20px; /* Add padding for better appearance */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly horizontally */
+  align-items: center; /* Vertically align items */
+  }
+  
+  .footer-column {
+  flex: 1; /* Equal width for each footer column */
+  margin-right: 20px; /* Add margin between footer columns */
+  }
+  
+  .footer-list {
+  color: #333; /* Text color for footer items */
+  }
+  
+  .footer-list h3 {
+  font-size: 18px; /* Footer list title font size */
+  margin-bottom: 10px; /* Add spacing below the title */
+  }
+  
+  .footer-list-item {
+  margin-bottom: 5px; /* Add spacing between footer items */
+  }
+  
+  .footer-list-item a {
+  color: #666; /* Link color for footer items */
+  text-decoration: none; /* Remove default underline */
+  }
+  
+  .footer-list-item a:hover {
+  text-decoration: underline; /* Add underline on hover */
+  }
+  
+  #copyright {
+  font-size: 14px; /* Font size for copyright text */
+  }
+  
+    </style>
+</head>
+<body>
+    <a class="logo" href="index.ejs">
+        <img
+          class="logo"
+          src="https://i.pinimg.com/736x/83/1c/66/831c66282f6df164dedda50ae58ae614.jpg"
+          alt="way 2 career"
+        />
+      </a>
+            <ul class="nav_links">
+                <li>
+                    <a href="internships.ejs">Internships</a>
+                </li>
+                <li>
+                    <a href="#">Online Training <span id="headOffer">OFFER</span></a>
+                </li>
+                <li>
+                    <a href="#">Freshers Job</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="students_log.ejs" id="cta">
+            <button class="headingbutton">Login</button>
+        </a>
+        <a href="students_reg.ejs" id="cta1">
+            <button class="headingbutton" id="register">Register</button>
+        </a>
+    </header>
+
+    <!-- This is body of signup page -->
+    <div style="margin-top: 30px"></div>
+    <div class="max-width-container">
+        <div id="regestration_container">
+            <div id="regestration_container_left">
+                <div class="regestration_content">
+                    <div class="heading_0">
+                        A
+                        <span id="freetext">Free</span>
+                        ride to your dream career
+                        <h3>Register and apply to 10000+ opportunities</h3>
+                    </div>
+
+                    <div class="features_container">
+                        <div class="feature">
+                            <img src="https://internshala.com/static/images/common/check_box.svg" />
+                            <h4>Internships</h4>
+                        </div>
+                        <div class="feature">
+                            <img src="https://internshala.com/static/images/common/check_box.svg" />
+                            <h4>Fresher Jobs</h4>
+                        </div>
+                        <div class="feature">
+                            <img src="https://internshala.com/static/images/common/check_box.svg" />
+                            <h4>Work from home jobs</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="regestration_container_right">
+                <div id="google_button_container">
+                    <div id="google_img_container">
+                        <img src="https://internshala.com/static/images/login/google_logo.png" />
+                    </div>
+                    <div id="google_content"><a href="#">Signup With Google</a></div>
+                </div>
+                <div id="form_container">
+                    <div class="helper">
+                        <div id="google_or"><p>OR</p></div>
+                    </div>
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" placeholder=" John@xyz.com" class="reg_fields" />
+                    <label for="password">Password</label>
+                    <input id="password" name="password" placeholder=" Set a password" class="reg_fields" type="password" />
+
+                    <label for="firstname">First name</label>
+                    <input id="firstname" name="firstname" placeholder=" Your first name" class="reg_fields" />
+                    <label for="lastname">Last name</label>
+                    <input id="lastname" name="lastname" placeholder=" Your last name" class="reg_fields" />
+
+                    <p>
+                        By signing up you agree to
+                        <span><a href="#">Terms and Conditions</a></span>
+                    </p>
+                    <button id="signup_btn" type="submit">Signup</button>
+
+                    <p>
+                        Already Registered ?
+                        <span><a href="students_log.ejs">Login</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration buttons -->
+    <div class="registration-buttons">
+        <button onclick="registerSpecificSkillFinder()">Specific Skill Finder</button>
+        <button onclick="registerJobSeekerWithSpecificSkills()">Job Seeker with Specific Skills</button>
+        <button onclick="registerAfterSchooling()">After Schooling</button>
+        <button onclick="registerHRRecruiter()">HR Recruiter</button>
+        <button onclick="registerRecentGraduate()">Recent Graduate</button>
+        <button onclick="registerOnTheJobTraining()">On-the-Job Training (specified)</button>
+    </div>
+
+    <!-- Footer Starts from here -->
+    <div id="footer" class="generic_footer">
+        <!-- Footer content -->
+    </div>
+
+    <!-- Script file -->
+    <script src="/static/js/students_reg.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Seeker Profile with Specification Skills</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        body {
+            background-color: #f0f7ff;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background-color: #004a99;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        main {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Job Seeker Profile Portal</h1>
+    </header>
+
+    <main>
+        <form id="jobSeekerForm">
+            <label for="desiredRole">Desired Job Role:</label>
+            <select id="desiredRole" name="desiredRole" required>
+                <option value="">Select a role</option>
+                <option value="zohoDeveloper">Zoho Developer</option>
+                <option value="softwareEngineer">Software Engineer</option>
+                <option value="dataScientist">Data Scientist</option>
+                <option value="projectManager">Project Manager</option>
+                <option value="webDeveloper">Web Developer</option>
+                <option value="systemAdministrator">System Administrator</option>
+                <option value="networkEngineer">Network Engineer</option>
+                <option value="uiUxDesigner">UI/UX Designer</option>
+                <option value="databaseAdministrator">Database Administrator</option>
+                <option value="cloudEngineer">Cloud Engineer</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="roadmapDetails"></div>
+    </main>
+
+    <footer>
+        <p>&copy; Job Seeker Portal</p>
+    </footer>
+
+    <script src="/static/js/job_seeker_specification_skills.js"></script>
+</body>
+</html>
