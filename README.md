@@ -60,30 +60,38 @@ The AI-powered career counseling chatbot is a central feature of the WAY 2 CAREE
 Chatbot Features
 
  ![Screenshot_2024-07-10-21-11-09-516_org videolan vlc-edit](https://github.com/vignesh00712/Way2Career---Catch-2024-/assets/139787967/a5cbcab1-c140-4e03-a3ba-db9c28f76e5d)
-     ![Screenshot_2024-07-10-21-12-12-080_org videolan vlc](https://github.com/vignesh00712/Way2Career---Catch-2024-/assets/139787967/165c9734-b708-49f3-9e1f-6d7c595ea694)
-     ![Screenshot_2024-07-10-21-12-04-085_org videolan vlc](https://github.com/vignesh00712/Way2Career---Catch-2024-/assets/139787967/9cc6e9f4-3023-41a0-8076-aa8ed7bd7fb5)
-    ![Screenshot_2024-07-10-21-11-51-437_org videolan vlc](https://github.com/vignesh00712/Way2Career---Catch-2024-/assets/139787967/2e4386f3-4c7e-46ad-ac7e-a901e84d8cef)
 
-
-    Personalized Career Counseling:
-        The chatbot offers tailored career advice based on user input.
-        It analyzes user responses to provide relevant guidance on career choices, educational paths, and job opportunities.
-
-    User-Friendly Interface:
+ User-Friendly Interface:
         The chatbot interface is designed to be intuitive and easy to use.
         Users can interact with the chatbot through natural language, making the conversation flow smoothly.
 
-    Career Path Suggestions:
+ 
+![Screenshot_2024-07-10-21-12-12-080_org videolan vlc](https://github.com/vignesh00712/Way2Career---Catch-2024-/assets/139787967/165c9734-b708-49f3-9e1f-6d7c595ea694)
+
+Personalized Career Counseling:
+        The chatbot offers tailored career advice based on user input.
+        It analyzes user responses to provide relevant guidance on career choices, educational paths, and job opportunities.
+        
+ ![Screenshot_2024-07-10-21-11-51-437_org videolan vlc](https://github.com/vignesh00712/Way2Career---Catch-2024-/assets/139787967/2e4386f3-4c7e-46ad-ac7e-a901e84d8cef)
+
+ Career Path Suggestions:
         Based on the user's interests and qualifications, the chatbot suggests potential career paths.
         It provides information on the skills and qualifications needed for different careers.
+
+  ![Screenshot_2024-07-10-21-12-04-085_org videolan vlc](https://github.com/vignesh00712/Way2Career---Catch-2024-/assets/139787967/9cc6e9f4-3023-41a0-8076-aa8ed7bd7fb5)
+   
+ Personality Assessment Integration:
+        The chatbot can guide users through the personality assessment test.
+        It provides feedback based on the test results, helping users understand their strengths and career suitability.
+
+    
+    
 
     Internship and Job Recommendations:
         The chatbot helps users find internships and jobs that match their profiles.
         It can filter opportunities based on user preferences such as industry, location, and job type.
 
-    Personality Assessment Integration:
-        The chatbot can guide users through the personality assessment test.
-        It provides feedback based on the test results, helping users understand their strengths and career suitability.
+   
 
     24/7 Availability:
         The chatbot is available round the clock, ensuring users can get help whenever they need it.
